@@ -1,4 +1,4 @@
-import akka.actor.{Actor, ActorRef, Props}
+import akka.actor.{Actor, Props}
 import akka.routing.{ ActorRefRoutee, RoundRobinRoutingLogic, Router }
 
 class Manager extends Actor {

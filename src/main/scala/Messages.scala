@@ -1,4 +1,3 @@
-import akka.actor.ActorRef
 import java.io.File
 
 sealed trait Response

@@ -1,4 +1,4 @@
-import akka.actor.{ActorRef, ActorSystem, Props}
+import akka.actor.{ActorSystem, Props}
 
 @main
 def ParallelDarkImages(in: String, out: String, threshold: Int, func: String): Unit = {

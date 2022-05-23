@@ -1,5 +1,5 @@
-import akka.actor.{Actor, ActorRef, Props}
 import javax.imageio.ImageIO
+import akka.actor.Actor
 
 class PhotoActor extends Actor {
   override def receive: Receive = {
@@ -8,8 +8,6 @@ class PhotoActor extends Actor {
   }
 
   def process(p: ProcessImage): Unit = {
-    println(p.pathOut)
-
     val image = ImageIO.read(p.file)
     val data = bufferedImageToData(image)
     val pixelLightness = lightness(data)
