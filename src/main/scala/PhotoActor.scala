@@ -1,6 +1,9 @@
 import javax.imageio.ImageIO
 import akka.actor.Actor
 
+/** Actor processing images
+ * 
+ */
 class PhotoActor extends Actor {
   override def receive: Receive = {
     case p: ProcessImage => process(p)

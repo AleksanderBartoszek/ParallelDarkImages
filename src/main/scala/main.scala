@@ -15,6 +15,6 @@ def ParallelDarkImages(in: String, out: String, threshold: Int, func: String): U
   }
 
   for (e <- getDirectory(inputPath).listFiles) {
-    manager ! Forward(e, outputPath, cutOff, function)
+    manager ! ProcessImage(e, outputPath, cutOff, function)
   }
 }
