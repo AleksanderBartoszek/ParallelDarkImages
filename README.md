@@ -1,6 +1,6 @@
 # Filtering Dark Images - parallel with Akka 
 
-[link to single thread version: https://bitbucket.org/aleksanderbartoszek/filterdarkimages/src/master/]
+[link to single thread version: (https://github.com/AleksanderBartoszek/FilterDarkImages)]
 
 ### Method of evaluating how "dark" is the image
 
